@@ -41,6 +41,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-
-### Custom ###
-gradle/wrapper/gradle-wrapper.jar

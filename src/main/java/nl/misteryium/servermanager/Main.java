@@ -13,8 +13,8 @@ public class Main {
             ServerInstallerRegistry registry =
                     new ServerInstallerRegistry(List.of(
                             new VanillaInstaller(),
-                            new FabricInstaller()
-//                            new ForgeInstaller(),
+                            new FabricInstaller(),
+                            new ForgeInstaller()
 //                            new NeoForgeInstaller(),
 //                            new QuiltInstaller()
                     ));
