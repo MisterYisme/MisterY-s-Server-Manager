@@ -3,19 +3,17 @@ package nl.misteryium.servermanager;
 import nl.misteryium.servermanager.installer.*;
 
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Path serverDir = args.length > 0 ? Path.of(args[0]).toAbsolutePath().normalize() : Path.of("./").toAbsolutePath().normalize();
 
         try (Scanner scanner = new Scanner(System.in)) {
             ServerInstallerRegistry registry =
                     new ServerInstallerRegistry(List.of(
-                            new VanillaInstaller()
-//                            new FabricInstaller(),
+                            new VanillaInstaller(),
+                            new FabricInstaller()
 //                            new ForgeInstaller(),
 //                            new NeoForgeInstaller(),
 //                            new QuiltInstaller()
