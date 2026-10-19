@@ -14,8 +14,8 @@ public class Main {
                     new ServerInstallerRegistry(List.of(
                             new VanillaInstaller(),
                             new FabricInstaller(),
-                            new ForgeInstaller()
-//                            new NeoForgeInstaller(),
+                            new ForgeInstaller(),
+                            new NeoForgeInstaller()
 //                            new QuiltInstaller()
                     ));
 
